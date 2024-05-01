@@ -1,0 +1,18 @@
+[package]
+name = "smpp-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+
+[dev-dependencies]
+tokio-test = "0.4"
+
+[[bin]]
+name = "client_example"
+path = "src/examples/client/client_example.rs"
+
+[[bin]]
+name = "server_example"
+path = "src/examples/server/server_example.rs"
